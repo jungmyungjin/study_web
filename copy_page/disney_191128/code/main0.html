@@ -1,0 +1,98 @@
+<!doctype>
+<html>
+
+<!--
+해야할 일
+
+div로 전부 작성후 -> sementic 태그로 수정 할것
+
+-->
+
+<head>
+  <title>월트디즈니 공식 홈페이지</title>
+  <style>
+  .container{
+    /* margin-top: 8rem; */
+    display:flex;
+    flex-direction:column;
+
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+
+  }
+  .item{
+    flex-basis:15rem;
+    border:1px solid;
+  }
+
+  .container #promotion{
+    background-image: url("..\\image\\promotion.jpg");
+  }
+
+
+  /* 메인 로고 */
+  header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    /* background-color:black; */
+    /* border:1px solid; */
+    /* height:8rem; */
+  }
+  #main_logo{
+    text-align:center;
+  }
+  img{
+    height:5rem;
+  }
+  nav ul{
+    position:absolute;
+    list-style:none;
+    top: 2rem;
+    right:1rem;
+  }
+  nav ul li{
+    display:inline-block;
+    padding-right:2rem;
+  }
+  nav ul li a{
+    text-decoration:none;
+    font-size:1.5rem;
+    color:white;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- header -->
+    <div id="main_logo">
+      <img  src="..\\image\\disney_korea_logo.png" alt="">
+    </div>
+    <nav id="main_logo">
+      <ul>
+        <li><a class="link" href="#">DISNEY</a></li>
+        <li><a class="link" href="#">MARVEL</a></li>
+        <li><a class="link" href="#">STAR WARS</a></li>
+        <li><a class="link" href="#">EVENT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="item" id="promotion">promotion</div>
+    <div class="item" id="disney">disney</div>
+    <div class="item" id="marvel">marvel</div>
+    <div class="item" id="star_wars">star_wars</div>
+  </div>
+
+  <footer>
+    footer
+  </footer>
+
+</body>
+
+</html>
