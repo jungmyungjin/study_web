@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="foodwith.css"> -->
+  <title>
+    Food with
+  </title>
+  <style>
+  *{
+    margin:0;
+    box-sizing:border-box;
+  }
+  header{
+    position:fixed;
+    height: 66px;
+    width:100%;
+    background-color:rgba(64,64,64,75%);
+    padding-left:20rem;
+  }
+  header img{
+    display: inline-block;
+   height: 100%;
+   padding:20px;
+   vertical-align: middle;
+  }
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+    section div{
+      /* flex-basis: 10px; */
+      /* flex-basis:1; */
+      text-align:center;
+    }
+
+    #main {
+      background-color: #fff;
+      height: 750px;
+    }
+    #creator {
+      background-color: #f9939d;
+      height: 822px;
+    }
+    #store {
+      background-color: #d5e43f;
+      height: 1084px;
+    }
+    #recipe {
+      background-color: #b893f9;
+      background-image:url("../image/pattern_recipe.png");
+      background-repeat:repeat-x;
+      background-position: left center;
+      height: 1030px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span>
+      <a href="#">
+        <img id="logo" src="../image/logo.png" alt="foodwith">
+      </a>
+    </span>
+  </header>
+  <section>
+    <div id="main">
+      <img src="../image/section_invite.jpg" alt="">
+    </div>
+    <div id="creator">
+      <img src="../image/section_creator.jpg" alt="">
+    </div>
+    <div id="store">
+      <img src="../image/section_store.jpg" alt="">
+      <div ="prducts">
+        <div class="product">
+        </div>
+
+      </div>
+    </div>
+    <div id="recipe">
+      <img src="../image/section_recipe.png" alt="">
+      <!-- <img src="../image/pattern_recipe.png" alt=""> -->
+    </div>
+    <div id="FAQ">
+      <img src="../image/title_faq.gif" alt="">
+
+
+    </div>
+  </section>
+  <footer>
+    <span id="copyright">foodwith ALL Right Reserved. </span>
+  </footer>
+</body>
+
+</html>
