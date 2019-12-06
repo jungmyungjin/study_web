@@ -7,62 +7,120 @@
     Food with
   </title>
   <style>
-  *{
-    margin:0;
-    box-sizing:border-box;
-  }
-  header{
-    position:fixed;
-    height: 66px;
-    width:100%;
-    background-color:rgba(64,64,64,75%);
-    padding-left:20rem;
-  }
-  header img{
-    display: inline-block;
-   height: 100%;
-   padding:20px;
-   vertical-align: middle;
-  }
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: fixed;
+      height: 66px;
+      width: 100%;
+      background-color: rgba(64, 64, 64, 75%);
+      padding-left: 20rem;
+    }
+
+    header img {
+      display: inline-block;
+      height: 100%;
+      padding: 20px;
+      vertical-align: middle;
+    }
+
     section {
       display: flex;
       flex-direction: column;
     }
-    section div{
+
+    section div {
       /* flex-basis: 10px; */
       /* flex-basis:1; */
-      text-align:center;
+      text-align: center;
     }
 
     #main {
       background-color: #fff;
       height: 750px;
     }
+
     #creator {
       background-color: #f9939d;
       height: 822px;
     }
+
     #store {
       background-color: #d5e43f;
+      background-image: url("../image/section_store.jpg");
+      background-position: center;
       height: 1084px;
     }
+
+    #store table {
+      position: relative;
+      top: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border-spacing: 20px;
+      table-layout: fixed;
+    }
+    #store table td{
+        width: 230px;
+      }
+
+    #store table img{
+      height: 230;
+      border-radius: 10px;
+    }
+
+    #store table .item_name {
+      font-size: 20px;
+      color: #1b1d21;
+    }
+
+    #store table .prise {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1b1d21;
+    }
+
+    #store table td p{
+      width: 230px;
+      padding-left : 10px;
+      padding-right : 10px;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    #store table .item_infomation {
+      height: 100px;
+    }
+
+    #store table #kiwi img:hover{
+      color: rgba(96,132,2,0.9);
+    }
+
     #recipe {
       background-color: #b893f9;
-      background-image:url("../image/pattern_recipe.png");
-      background-repeat:repeat-x;
+      background-image: url("../image/pattern_recipe.png");
+      background-repeat: repeat-x;
       background-position: left center;
       height: 1030px;
+    }
+    #recipe img{
+      display:inline;
+      height:100%;
+      vertical-align: center;
+      padding:5rem;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <span>
-      <a href="#">
-        <img id="logo" src="../image/logo.png" alt="foodwith">
-      </a>
-    </span>
+    <a href="#">
+      <img id="logo" src="../image/logo.png" alt="foodwith">
+    </a>
   </header>
   <section>
     <div id="main">
@@ -72,11 +130,91 @@
       <img src="../image/section_creator.jpg" alt="">
     </div>
     <div id="store">
-      <img src="../image/section_store.jpg" alt="">
-      <div ="prducts">
-        <div class="product">
-        </div>
-
+      <!-- <img src="../image/section_store.jpg" alt=""> -->
+      <div id="table">
+        <table>
+          <tr>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_apple.jpg" alt="">
+              </a>
+            </td>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_onion.jpg" alt="">
+              </a>
+            </td>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_banana.jpg" alt="">
+              </a>
+            </td>
+            <td id="kiwi" class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_kiwi.jpg" alt="">
+              </a>
+              <p>50%</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="item_infomation">
+              <p class="item_name">꿀사과</p>
+              <p class="prise">8,900원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">친환경 양파</p>
+              <p class="prise">2,900원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">제주 직송 유기농 바나나</p>
+              <p class="prise">33,900원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">국내산 키위</p>
+              <p class="prise">16,900원</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_broccoli.jpg" alt="">
+              </a>
+            </td>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_lemon.jpg" alt="">
+              </a>
+            </td>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_garlic.jpg" alt="">
+              </a>
+            </td>
+            <td class="item_img">
+              <a href="#">
+                <img src="../image/thumbnail_tomato.jpg" alt="">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="item_infomation">
+              <p class="item_name">유기능 브로콜리</p>
+              <p class="prise">2,480원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">본사 직영 레몬</p>
+              <p class="prise">14,900원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">국내산 마늘</p>
+              <p class="prise">10,900원</p>
+            </td>
+            <td class="item_infomation">
+              <p class="item_name">정품 완숙 토마토</p>
+              <p class="prise">19,900원</p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
     <div id="recipe">
