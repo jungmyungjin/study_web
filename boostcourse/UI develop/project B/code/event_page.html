@@ -39,6 +39,7 @@
     }
 
     #main {
+      background-position: center;
       background-color: #fff;
       height: 750px;
     }
@@ -50,14 +51,18 @@
 
     #store {
       background-color: #d5e43f;
-      background-image: url("../image/section_store.jpg");
       background-position: center;
       height: 1084px;
     }
 
+    #table{
+      position:relative;
+      top:-800px;
+    }
+
     #store table {
       position: relative;
-      top: 300px;
+      /* top: 300px; */
       margin-left: auto;
       margin-right: auto;
       border-spacing: 20px;
@@ -96,22 +101,33 @@
       height: 100px;
     }
 
-    #store table #kiwi img:hover{
-      color: rgba(96,132,2,0.9);
+    #store table #kiwi:hover {
+      background: green;
     }
-
     #recipe {
-      background-color: #b893f9;
+      display:inline;
       background-image: url("../image/pattern_recipe.png");
       background-repeat: repeat-x;
       background-position: left center;
       height: 1030px;
+      background-color: #b893f9;
+      margin:0px;
+
     }
-    #recipe img{
-      display:inline;
+    #recipe #food_img{
+      background-color: #b893f9;
       height:100%;
       vertical-align: center;
-      padding:5rem;
+      padding-top:8rem;
+      padding-bottom:12rem;
+      margin:0px;
+    }
+    #recipe #text{
+      display:inline;
+      position:relative;
+      vertical-align: center;
+
+      /* top:-10rem; */
     }
   </style>
 </head>
@@ -130,7 +146,7 @@
       <img src="../image/section_creator.jpg" alt="">
     </div>
     <div id="store">
-      <!-- <img src="../image/section_store.jpg" alt=""> -->
+      <img src="../image/section_store.jpg" alt="">
       <div id="table">
         <table>
           <tr>
@@ -153,7 +169,6 @@
               <a href="#">
                 <img src="../image/thumbnail_kiwi.jpg" alt="">
               </a>
-              <p>50%</p>
             </td>
           </tr>
           <tr>
@@ -218,12 +233,12 @@
       </div>
     </div>
     <div id="recipe">
-      <img src="../image/section_recipe.png" alt="">
+      <img id="food_img" src="../image/section_recipe.png" alt="">
       <!-- <img src="../image/pattern_recipe.png" alt=""> -->
+      <img id="text" src="../image/go_recipe.gif" alt="">
     </div>
     <div id="FAQ">
       <img src="../image/title_faq.gif" alt="">
-
 
     </div>
   </section>
