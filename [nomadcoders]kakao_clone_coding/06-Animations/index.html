@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background:red;
+            animation:5s scaleAndRoatedSquare1 infinite ease-in-out; 
+        }
+
+        @keyframes scaleAndRoatedSquare1{
+            from{
+                transform:none;            }
+            to{
+                transform:rotate(1turn) scale(.5,.5);
+            }
+
+        }
+
+        @keyframes scaleAndRoatedSquare2{
+            0%{
+                transform:none;
+            }
+            50%{
+                transform:rotate(1turn) scale(.5,.5);
+                color: white;
+            }
+            100%{
+                transform:none;
+                color: blue;;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">5</div>
+</body>
+</html>
