@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index | KaKao clone</title>
+    <title>Chats | KaKao clone</title>
     <script
       src="https://kit.fontawesome.com/4e348215a7.js"
       crossorigin="anonymous"
@@ -27,7 +27,7 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Index</h1>
+        <h1 class="header__title">Chats</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
@@ -45,21 +45,26 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                src="image/my_profile.jpg"
-                alt=""
-                class="chat__avater g-avatar"
-              />
-              <div class="chat__content">
-                <span class="chat_username">
-                  Lynn
-                </span>
-                <span class="chat__preview">Going home!</span>
+            <div class="friends__friend friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="image/my_profile.jpg"
+                  class="g-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <div class="friend__name">
+                    Myungjin
+                  </div>
+                  <span class="friend__bottom-text">
+                    yeah!!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__Column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">yesterday</span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -75,6 +80,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
