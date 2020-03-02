@@ -6,6 +6,7 @@
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  z-index: 2;
 }
 
 .chats-body {
@@ -147,10 +148,23 @@
   font-weight: 500;
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .incoming-message img {
   width: 30px;
   border-radius: 15px;
   margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  animation: spin 1s linear infinite;
 }
 
 .message__content .message__bubble {
