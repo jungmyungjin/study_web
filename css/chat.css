@@ -4,8 +4,7 @@
   width: 100%;
   padding: 5px 0px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   z-index: 2;
 }
 
@@ -17,17 +16,16 @@
   min-height: 100000px;
   margin-top: 30px;
 }
-.chats-body .header,
-.chats-bodt .status-bar {
+
+.chats-body .header, .chats-bodt .status-bar {
   padding: 0px 20px;
 }
+
 .chat__write-containter {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #fcfcfc; */
-
   width: 100%;
   bottom: 0px;
   left: 0px;
@@ -37,34 +35,33 @@
 .chat__icon-left {
   display: inline-block;
   position: absolute;
-  left: 10px;
+  left: 15px;
 }
 
 .chat__icon-right {
   display: inline-block;
   position: absolute;
-  right: 10px;
+  right: 20px;
+}
+
+.chat__icon-right .chat__write-icon {
+  margin-left: 10px;
 }
 
 @keyframes float {
   0% {
-    box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2),
-      0px 18px 36px -18px rgba(0, 0, 0, 0.3),
-      0px -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2), 0px 18px 36px -18px rgba(0, 0, 0, 0.3), 0px -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
   50% {
-    box-shadow: 0px 30px 60px -60px rgba(50, 50, 93, 0.2),
-      0px 18px 36px -18px rgba(0, 0, 0, 0.3),
-      0px -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0px 30px 60px -60px rgba(50, 50, 93, 0.2), 0px 18px 36px -18px rgba(0, 0, 0, 0.3), 0px -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
   100% {
-    box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2),
-      0px 18px 36px -18px rgba(0, 0, 0, 0.3),
-      0px -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2), 0px 18px 36px -18px rgba(0, 0, 0, 0.3), 0px -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
 }
 
 .chat__write {
+  z-index: -1;
   margin: 0 auto;
   bottom: 0px;
   width: 100%;
@@ -73,8 +70,7 @@
   width: 100%;
   border: none;
   font-size: 14px;
-  transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .chat__write:focus {
@@ -82,10 +78,7 @@
   width: 80%;
   transform: translateY(-100px);
   border-radius: 50px;
-  box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2),
-    0px 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0px -12px 36px -8px rgba(0, 0, 0, 0.025);
-
+  box-shadow: 0px 30px 60px -12px rgba(50, 50, 93, 0.2), 0px 18px 36px -18px rgba(0, 0, 0, 0.3), 0px -12px 36px -8px rgba(0, 0, 0, 0.025);
   animation: float 3s linear infinite forwards;
 }
 
@@ -94,7 +87,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.chat__write:focus ~ .chat__icon {
+.chat__write:focus~.chat__icon {
   opacity: 0;
 }
 
@@ -121,9 +114,7 @@
   padding: 5px 10px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -139,6 +130,7 @@
 .incoming-message {
   align-self: flex-start;
 }
+
 .sent-message {
   align-self: flex-end;
 }
@@ -161,17 +153,13 @@
   width: 30px;
   border-radius: 15px;
   margin-right: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   animation: spin 1s linear infinite;
 }
 
 .message__content .message__bubble {
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 40px;
 }
